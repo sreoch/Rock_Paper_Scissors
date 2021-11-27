@@ -3,10 +3,9 @@ from controllers.controller import *
 
 
 class Game:
-
     def compare_choices(choice1, choice2):
         if choice1 == choice2:
-            return None
+            return "It is a tie!"
         elif choice1 == "rock":
             if choice2 == "scissors":
                 return "Rock beats scissors, rock wins!"

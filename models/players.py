@@ -1,8 +1,6 @@
-from models.player import *
+from models.player import Player
 
+player_list = []
 
-player1 = Player('Scott', 'scissors')
-player2 = Player('Matthew', 'rock')
-player3 = Player('Cameron', 'paper')
-
-player_list = [player1, player2, player3]
+def add_player(player):
+    player_list.append(player)

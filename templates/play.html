@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<form action="/play" method="post">
+    
+    <input autocomplete="off" autofocus placeholder="Name" type="text" name="name">
+    
+    <label for="option">Pick an option</label>
+    
+    <select name="option" id="option">
+        
+        <option value="rock">Rock</option>
+        
+        <option value="paper">Paper</option>
+        
+        <option value="scissors">Scissors</option>
+    
+    </select>
+    
+    <input type="submit">
+
+</form>
+
+    
+{% endblock content %}
