@@ -24,6 +24,7 @@ def show_winner():
     computer_option = random.choice(computer_choices)
     option = request.form.get("option")
     winner = Game.compare_choices(option, computer_option)
+    player1 = Player(request.form['name'], request.form['option'])
 
     return render_template(
         "result.html", option=option, computer_option=computer_option, winner=winner
